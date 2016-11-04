@@ -1,0 +1,30 @@
+{
+	"name": "Pipe Escape",
+	"version": "3.0.0",
+	"author": [
+		"David M. Sledge",
+		"Purodha Blissenbach"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Pipe_Escape",
+	"descriptionmsg": "pipeescape-desc",
+	"namemsg": "pipeescape-extensionname",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"PipeEscape": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PipeEscapeMagic": "PipeEscape.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"PipeEscape": "PipeEscape.class.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"PipeEscape::setup"
+		]
+	},
+	"manifest_version": 1
+}

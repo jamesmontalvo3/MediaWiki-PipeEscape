@@ -1,0 +1,47 @@
+{
+	"name": "mediawiki/pipeescape",
+	"type": "mediawiki-extension",
+	"description": "The only standard solution to translate any kind of text with an avant-garde web interface within MediaWiki, including your documentation and software",
+	"keywords": [
+		"wiki",
+		"MediaWiki",
+		"extension",
+		"pipe character",
+		"Pipe Escape"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:Pipe_Escape",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "David M. Sledge",
+			"role": "Original author"
+		},
+		{
+			"name": "Purodha Blissenbach",
+			"email": "purodha@tools.wmflabs.org",
+			"role": "Maintainer"
+		}
+	],
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-pipeescape/",
+		"wiki": "https://www.mediawiki.org/wiki/Extension:Pipe_Escape",
+		"forum": "https://www.mediawiki.org/wiki/Extension_talk:Pipe_Escape",
+		"source": "https://git.wikimedia.org/summary/?r=mediawiki/extensions/PipeEscape.git"
+	},
+	"require": {
+		"php": ">=5.0.0",
+		"mediawiki/core": ">=1.22.0",
+		"composer/installers": ">=1.0.1"
+	},
+	"autoload": {
+		"files": [
+			"PipeEscape.php"
+			]
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false
+	},
+	"suggest": {
+	}
+}
